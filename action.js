@@ -1,4 +1,5 @@
-var shareButton = document.querySelectorAll(".tile-share-button");
+var tileShareButton = document.querySelectorAll(".tile-share-button");
+var shareButton = document.querySelectorAll(".share-button");
 
 function copyTxt(e) {
   e.preventDefault();
@@ -9,6 +10,9 @@ function copyTxt(e) {
   } catch (err) {}
 }
 
+tileShareButton.forEach((tileShareButton) =>
+  tileShareButton.addEventListener("click", copyTxt)
+);
 shareButton.forEach((shareButton) =>
   shareButton.addEventListener("click", copyTxt)
 );

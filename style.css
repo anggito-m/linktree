@@ -62,6 +62,14 @@ header {
   align-items: baseline;
 }
 
+.share-button:hover {
+  fill: white;
+  background-color: rgb(52, 52, 52);
+  transition: cubic-bezier(0.7, 1.41, 0.82, 1.41) 0.5s;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 2px 2px #fff;
+}
+
 .share-button svg {
   margin-top: 10px;
   width: 40px;
@@ -99,6 +107,10 @@ header {
   height: 40px;
   border-radius: 20px;
   background-color: rgb(52, 52, 52);
+}
+
+.tile-share-button:hover {
+  background-color: rgb(209, 205, 205);
 }
 
 .tile-share-button svg {
